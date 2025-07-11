@@ -15,7 +15,7 @@ include_once 'config/config.php'; // Inclui o arquivo de configuração
     <div class="grid-col-3 px-5 py-5">
     <?php
     if($responseData !=null):
-    foreach ($responseData as $key => $data):        
+    foreach ($responseData['posts'] as $key => $data):        
     ?>
         <a href="blogs/<?= $data['slug'] ?>" title="<?= $data['title'] ?>">
             <div class="card">
@@ -42,7 +42,7 @@ else:
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+<!-- <script>
     function deleteImage(imageUrl) {
         $.ajax({
             url: 'http://127.0.0.1:8000/api/showapi', // Endpoint PHP
@@ -65,6 +65,6 @@ else:
     // Exemplo de uso
     const imageUrl = 'imagem.jpg'; // Substitua pelo valor real
     deleteImage(imageUrl);
-</script>
+</script> -->
 </html>
 

@@ -13,7 +13,7 @@ curl_setopt_array($curl, array(
     CURLOPT_CUSTOMREQUEST => 'GET',
     CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: Bearer seu_token_aqui'
+        'Authorization: Bearer 5|eWxqifjuO5GIzMTPlcKOd0E2Hz7kzIzTsWsGnlqX55e700d6'
     ),
 )); 
 // 2. Executa o cURL e recebe a resposta

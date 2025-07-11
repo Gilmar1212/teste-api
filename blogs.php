@@ -7,6 +7,7 @@ $route = $parts[2] ?? '';
 
 // Pega o slug vindo da URL
 $slug = $route ?? "";
+$api_token = "2afbf1a72eb926c02ff2b5c939fe7ebe640f8e0124b4f794f8964f6a55f56d76";
 ?>
 
 <!DOCTYPE html>
@@ -31,8 +32,9 @@ if ($slug) {
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
+        'Accept: application/json',
         'Content-Type: application/json',
-        'Authorization: Bearer seu_token_aqui' // Adicione o token se necessário
+        'Authorization: Bearer 5|eWxqifjuO5GIzMTPlcKOd0E2Hz7kzIzTsWsGnlqX55e700d6' // Adicione o token se necessário
     ]);
     $response = curl_exec($ch);
     curl_close($ch);
