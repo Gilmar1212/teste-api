@@ -1,6 +1,6 @@
 <?php
 
-class ImageDownload {
+class imageDownload {
     private $imageUrl;
 
     // Construtor que recebe a URL da imagem

@@ -1,10 +1,11 @@
 <?php
 try{
+    
 // 1. Inicia o cURL para buscar dados da API
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'http://127.0.0.1:8000/api/showapi',
+    CURLOPT_URL => 'http://127.0.0.1:8000/api/showapi/68cdf9d2fdb9c18731d4b89ed55de9287c27177efaa64e6595b3f3e5f7cca6ef',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -13,7 +14,7 @@ curl_setopt_array($curl, array(
     CURLOPT_CUSTOMREQUEST => 'GET',
     CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'Authorization: Bearer 5|eWxqifjuO5GIzMTPlcKOd0E2Hz7kzIzTsWsGnlqX55e700d6'
+        'Authorization: Bearer 5|5qLPxpN4TAR1w0xj8jXx0DfVPLnrmge0q9snMYMy832383e0'
     ),
 )); 
 // 2. Executa o cURL e recebe a resposta

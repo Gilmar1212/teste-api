@@ -7,7 +7,7 @@ $route = $parts[2] ?? '';
 
 // Pega o slug vindo da URL
 $slug = $route ?? "";
-$api_token = "2afbf1a72eb926c02ff2b5c939fe7ebe640f8e0124b4f794f8964f6a55f56d76";
+$api_token = "68cdf9d2fdb9c18731d4b89ed55de9287c27177efaa64e6595b3f3e5f7cca6ef";
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +17,7 @@ $api_token = "2afbf1a72eb926c02ff2b5c939fe7ebe640f8e0124b4f794f8964f6a55f56d76";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$responseData[0]['title']?></title>
     
+        
 </head>
 <body>
 
@@ -25,7 +26,7 @@ $api_token = "2afbf1a72eb926c02ff2b5c939fe7ebe640f8e0124b4f794f8964f6a55f56d76";
 <?php
 if ($slug) {
     // Aqui você faz a requisição à sua API passando o slug
-    $url = "http://127.0.0.1:8000/api/posts/{$slug}"; // Ajuste para o endpoint correto da sua API
+    $url = "http://127.0.0.1:8000/api/posts/{$slug}/68cdf9d2fdb9c18731d4b89ed55de9287c27177efaa64e6595b3f3e5f7cca6ef"; // Ajuste para o endpoint correto da sua API
 
     // Usando cURL para fazer a requisição
     $ch = curl_init();

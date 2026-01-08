@@ -15,7 +15,7 @@ include_once 'config/config.php'; // Inclui o arquivo de configuração
     <div class="grid-col-3 px-5 py-5">
     <?php
     if($responseData !=null):
-    foreach ($responseData['posts'] as $key => $data):        
+    foreach ($responseData as $key => $data):        
     ?>
         <a href="blogs/<?= $data['slug'] ?>" title="<?= $data['title'] ?>">
             <div class="card">
