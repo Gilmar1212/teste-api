@@ -17,7 +17,7 @@ include_once 'config/config.php'; // Inclui o arquivo de configuração
     if($responseData !=null):
     foreach ($responseData as $key => $data):        
     ?>
-        <a href="blogs/<?= $data['slug'] ?>" title="<?= $data['title'] ?>">
+        <a href="posts/<?= $data['slug'] ?>" title="<?= $data['title'] ?>">
             <div class="card">
                 <img class="card_img" src="<?= $data['image_url'] ?>" alt="<?= $data['title'] ?>">
                 <h2 class="card_title">
